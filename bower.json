@@ -1,0 +1,29 @@
+{
+  "name": "Way2Adv",
+  "version": "0.0.0",
+  "homepage": "https://github.com/moshie/Way2Adv",
+  "authors": [
+    "moshie <hewitt.21@outlook.com>"
+  ],
+  "description": "Assets for way2adv",
+  "keywords": [
+    "portfolio",
+    "work",
+    "website",
+    "me",
+    "code",
+    "photoshop"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
