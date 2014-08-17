@@ -7,16 +7,16 @@ module.exports = function (grunt) {
         cssmin: {
             minify: {
                 expand: true,
-                cwd: 'resources/styles/',
+                cwd: 'public/css/',
                 src: ['*.css', '!*.min.css'],
-                dest: 'resources/styles/',
+                dest: 'public/css/',
                 ext: '.min.css'
             }
         },
         uglify: {
             dev: {
                 files:{
-                    "resources/scripts/app.min.js" : "resources/scripts/app.js"
+                    "public/scripts/main.min.js" : "public/scripts/main.js"
                 }
             }
         }
