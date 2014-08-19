@@ -1,11 +1,9 @@
-@import "compass/support";
-@import "compass/css3";
-@import "compass/layout";
+@import "compass";
 
 // Font weights
-$light: 100;
+$light: 300;
 $regular: 400;
-$bold: 600;
+$bold: 900;
 
 // Base Font
 $base-font-family: sans-serif;
@@ -15,7 +13,7 @@ $base-line-height: 1.4;
 
 // Fixed Font
 $fixed-font-family: monospace;
-$fixed-font-size: 85%;
+$fixed-font-size: 100%;
 $fixed-line-height: $base-line-height;
 
 // Headings
