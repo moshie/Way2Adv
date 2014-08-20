@@ -1,0 +1,16 @@
+<svg version="1.1" baseProfile="full" id="ipad-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	  viewBox="0 0 80.903 107.998" style="enable-background:new 0 0 80.903 107.998;"
+	 xml:space="preserve">
+<g>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#8A8A8A;" d="M79.15,107.998H3.348C1.5,107.998,0,105.221,0,103.372V3.348
+		C0,1.499,1.5,0,3.348,0H79.15c1.849,0,1.752,1.499,1.752,3.348v100.024C80.902,105.221,80.999,107.998,79.15,107.998z
+		 M41.072,103.707c2.945,0,5.334-2.33,5.334-5.202c0-2.873-2.389-5.202-5.334-5.202c-2.947,0-5.335,2.329-5.335,5.202
+		C35.736,101.377,38.125,103.707,41.072,103.707z M71.039,11.376c0-0.567-0.459-1.028-1.027-1.028H11.013
+		c-0.568,0-1.027,0.461-1.027,1.028v75.548c0,0.567,0.459,1.027,1.027,1.027h58.998c0.568,0,1.027-0.46,1.027-1.027V11.376z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#F9F9FA;" d="M10.01,10.376h61.03v77.67H10.01V10.376z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#2AACE3;" d="M13.839,13.49h53.012v23H13.839V13.49z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#01A64F;" d="M42.846,66.086h24.005v19H42.846V66.086z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#EC195C;" d="M13.839,39.865h53.012v23H13.839V39.865z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#FBF06E;" d="M13.839,66.086h24.005v19H13.839V66.086z"/>
+</g>
+</svg>

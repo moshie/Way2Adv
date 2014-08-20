@@ -1,0 +1,49 @@
+#twitter-feed {
+  width: 100%;
+  background-color: #000;
+  background-image: url('images/twitter_bg.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  color:#fff;
+
+  .twitter-icon {
+    display: block;
+    padding: 30px 25px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #f9f9f9;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    margin:0 auto;
+
+    svg * {
+      fill:$white;
+    }
+
+  }
+  .person {
+    color: $red;
+  }
+  .hashtag {
+    color:#247bd5;
+  }
+
+  .twitter-text {
+    margin-top: 30px;
+  }
+
+  .light.time {
+    color:#959595;
+    display: block;
+    margin-top:20px;
+  }
+}

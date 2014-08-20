@@ -1,0 +1,29 @@
+.flexslider {
+  margin-top:11%;
+  background:none;
+  border:0;
+  text-align: center;
+  @include box-shadow(none);
+
+  .quote {
+    padding:20px 20px 30px 20px;
+    background: rgba(0,0,0,.2);
+    display: inline-block;
+  }
+}
+
+.flex-direction-nav a {
+  color: $white;
+}
+.flex-control-paging li a {
+  width:15px;
+  height:15px;
+  background:none;
+  border:2px solid $red;
+  @include box-shadow(none);
+}
+.flex-control-paging li a.flex-active {
+  background: $red;
+  border:2px solid $red;
+  @include box-shadow(none);
+}

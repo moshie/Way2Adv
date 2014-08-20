@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Lobster);
-@import url(http://fonts.googleapis.com/css?family=Raleway:900,300);
 
 .logo {
   font-family: 'Lobster', cursive;
@@ -15,9 +13,10 @@
 .copyright {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size:.7em;
+  line-height: 3em;
 }
 
-h1 {
+h1, .h1 {
   font-family: 'Raleway', sans-serif;
   font-size:4em;
   font-weight: $bold;
@@ -26,7 +25,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-h2 {
+h2, .h2 {
   font-family: 'Raleway', sans-serif;
   font-size:2em;
   font-weight: $bold;
@@ -35,14 +34,14 @@ h2 {
   margin-bottom: 10px;
 }
 
-h3 {
+h3, .h3 {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size:2em;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-h4 {
+h4, .h4 {
   font-family: 'Raleway', sans-serif;
   font-size:1.4em;
   font-weight: $bold;
@@ -51,14 +50,14 @@ h4 {
   margin-bottom: 10px;
 }
 
-h5 {
+h5, .h5 {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size:1.6em;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-h6 {
+h6, .h6 {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size:1em;
   font-weight: bold;
@@ -67,23 +66,36 @@ h6 {
   margin-bottom: 15px;
 }
 
+dl {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: .9em;
+  line-height: 1.6em;
+}
+
 p {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: .9em;
   line-height: 1.6em;
   margin: 0 0 10px;
+
+  a {
+    border-bottom: 1px solid none;
+
+    &:hover,
+    &:active {
+      border-bottom: 1px dotted $red;
+    }
+  }
 }
 
 a {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: $red;
-  border-bottom: 1px solid none;
   text-decoration: none;
   background: transparent;
 }
 
 a:hover,
 a:active {
-  border-bottom: 1px dotted $red;
   outline:0;
 }

@@ -1,0 +1,17 @@
+/*Main module styles*/
+
+.module {
+  padding-bottom: $module-padding;
+  padding-top: $module-padding;
+  width:100%;
+}
+
+/*modules*/
+
+#profile-bar {
+  background: rgba(0, 0, 0, .7);
+  color: $white;
+  position: absolute;
+  bottom:0;
+  left:0;
+}

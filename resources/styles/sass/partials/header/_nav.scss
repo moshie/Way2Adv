@@ -1,0 +1,41 @@
+#main-navigation {
+  margin-left:30px;
+  margin-top:10px;
+  float:left;
+
+  ul {
+
+    li {
+      display: inline-block;
+      float: left;
+      margin-right:20px;
+      a {
+        display: block;
+        text-indent:-9999px;
+      }
+      .sprites-home {
+        width:19px;
+        height:17px;
+      }
+      .sprites-portfolio {
+        width:18px;
+        height:18px;
+      }
+      .sprites-blog {
+        width:16px;
+        height:16px;
+      }
+      .sprites-market {
+        width:23px;
+        height:18px;
+      }
+      .sprites-contact {
+        width:19px;
+        height:15px;
+      }
+
+    }
+
+  }
+
+}

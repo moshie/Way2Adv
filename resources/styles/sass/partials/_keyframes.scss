@@ -1,0 +1,25 @@
+//Slide
+
+@include keyframes(slide) {
+  from  { right:0; }
+  to    { left: 0; }
+}
+
+//Spin
+
+@include keyframes(spinIn) {
+  from   { @include transform(rotate(0deg)); }
+  to { @include transform(rotate(360deg));}
+}
+
+@include keyframes(spinOut) {
+  0%   { @include transform(rotate(360deg)); }
+  100% { @include transform(rotate(0deg)); }
+}
+
+//Cube Spin
+
+@include keyframes(spincube) {
+  from { @include transform(rotateY(0deg) rotateX(45deg) rotateZ(-45deg)); }
+  to { @include transform(rotateY(360deg) rotateX(45deg) rotateZ(-45deg)); }
+}

@@ -1,0 +1,16 @@
+#twitter-feed {
+  width: 100%;
+  background-color: #eee;
+  background-image: url("images/twitter_bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=twitterFeed.css.map */

@@ -5,12 +5,10 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         cssmin: {
-            minify: {
-                expand: true,
-                cwd: 'public/css/',
-                src: ['*.css', '!*.min.css'],
-                dest: 'public/css/',
-                ext: '.min.css'
+            combine: {
+              files: {
+                  'public/css/style.min.css' : ['public/bower_components/FlexSlider/flexslider.css','public/css/style.css']
+              }
             }
         },
         uglify: {

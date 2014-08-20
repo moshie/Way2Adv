@@ -5,14 +5,23 @@
 @import "compass/reset";
 @import "partials/typography";
 @import "partials/buttons";
+@import "partials/components";
 @import "partials/grid";
+@import "partials/helpers";
+@import "partials/modules";
 @import "partials/figures";
 @import "partials/sprites";
 
-
 // Styles
 @import "partials/header";
+@import "partials/footer";
+@import "partials/homeSplash";
+@import "partials/services";
+@import "partials/twitterFeed";
+@import "partials/contactInfo";
 
+//Keyframes
+@import "partials/keyframes";
 
 // Third-party
-
+@import "vendor/flexslider";

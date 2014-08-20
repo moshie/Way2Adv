@@ -1,0 +1,17 @@
+<svg version="1.1" baseProfile="full" id="laptop-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 195.996 140.022" style="enable-background:new 0 0 195.996 140.022;"
+	 xml:space="preserve">
+<g>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#C04F9D;" d="M132.057,61.5h23.996v24h-23.996V61.5z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#F7901E;" d="M103.006,61.5h23.996v24h-23.996V61.5z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#EC195C;" d="M103.006,22.091h54.991v23h-54.991V22.091z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#363636;" d="M190.379,140.022H5.616c-3.102,0-5.616-2.511-5.616-5.607
+		v-5.536c0-3.098,2.515-5.607,5.616-5.607h66.856v5.344h50.337v-5.344h67.57c3.102,0,5.616,2.509,5.616,5.607v5.536
+		C195.996,137.511,193.481,140.022,190.379,140.022z M173.093,116.232H21.317c-3.102,0-5.616-2.509-5.616-5.605V5.609
+		C15.701,2.511,18.215,0,21.317,0h151.776c3.102,0,5.617,2.511,5.617,5.609v105.018C178.71,113.723,176.195,116.232,173.093,116.232
+		z M167.4,11.961H27.256v91.908H167.4V11.961z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#2AACE3;" d="M37.726,22.091h52.991v23H37.726V22.091z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#01A64F;" d="M66.777,61.5h23.996v24H66.777V61.5z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#FCF16D;" d="M37.726,61.5h23.996v24H37.726V61.5z"/>
+</g>
+</svg>

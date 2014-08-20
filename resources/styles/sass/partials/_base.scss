@@ -19,4 +19,7 @@ $fixed-line-height: $base-line-height;
 // Headings
 $header-font-weight: $bold;
 
+//Transition Speeds
+$transition-speed: 0.3s;
+
 @import "../modules/all";

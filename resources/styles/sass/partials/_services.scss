@@ -1,0 +1,138 @@
+#services {
+
+  //Photography
+
+  #photography-service {
+
+    #camera-svg {
+      max-width: 140px;
+      max-height: 140px;
+      margin: 30px 0;
+      @include animation(spinIn 1s ease-out);
+    }
+
+    &:hover #camera-svg {
+      @include animation(spinOut 1s ease-out);
+    }
+  }
+
+  //3D Assets
+
+  #assets-service {
+
+    .cube-wrap {
+      height: 80px;
+      width: 74px;
+      margin: 64px auto;
+
+      .cubespinner {
+
+        @include transition(all 2s ease-out);
+        @include transform(rotateY(0deg) rotateX(45deg) rotateZ(-45deg));
+        @include transform-style(preserve-3d); //IE NOT SUPPORTED PLANNED RELEASE FOR THE FUTURE
+        @include transform-origin(40px, 40px 10px);
+
+        div {
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          text-align: center;
+          @include backface-visibility(hidden);
+          @include transition(all 1.5s linear);
+        }
+
+        .face1 {
+          background: #00aeef;
+          @include transform(translateZ(50px));
+        }
+        .face2 {
+          background: #fff568;
+          @include transform(rotateY(90deg) translateZ(50px));
+        }
+        .face3 {
+          background: #ff9000;
+          @include transform(rotateY(90deg) rotateX(90deg) translateZ(50px));
+        }
+        .face4 {
+          background: #ff00f0;
+          @include transform(rotateY(180deg) rotateZ(90deg) translateZ(50px));
+        }
+        .face5 {
+          background: #00a651;
+          @include transform(rotateY(-90deg) rotateZ(90deg) translateZ(50px));
+        }
+        .face6 {
+          background: #e9175f;
+          @include transform(rotateX(-90deg) translateZ(50px));
+        }
+
+      }
+
+    }
+
+    &:hover .cubespinner {
+
+      @include transform(rotateY(360deg) rotateX(45deg) rotateZ(-45deg));
+      @include transform-style(preserve-3d); //IE NOT SUPPORTED PLANNED RELEASE FOR THE FUTURE
+      @include transform-origin(50px, 50px 0px);
+    }
+
+  }
+
+  //Web Design
+
+  #web-design-service {
+
+    #devices {
+      height: 140px;
+      width: 190px;
+      margin: 30px auto;
+      position: relative;
+
+      li {
+        max-width:100%;
+        display: block;
+
+        #laptop-svg {
+          position: absolute;
+          max-width: 100%;
+          bottom: 0;
+          left: 0;
+        }
+
+        #ipad-svg {
+          position: absolute;
+          z-index:20;
+          max-width: 40%;
+          right:0;
+          bottom:0;
+          @include transition(all 2s ease-out);
+        }
+
+        #mobile-svg {
+          position: absolute;
+          z-index:30;
+          right:0;
+          max-width: 20%;
+          bottom:0;
+          @include transition(all 1s ease-out);
+        }
+
+
+      }
+
+    }
+
+    &:hover #devices #ipad-svg {
+      @include transition(all 2s ease-out);
+      right: 114px;
+    }
+
+    &:hover #devices #mobile-svg {
+      @include transition(all 1s ease-out);
+      right: 152px;
+    }
+
+  }
+
+}

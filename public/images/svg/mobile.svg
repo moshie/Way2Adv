@@ -1,0 +1,14 @@
+<svg version="1.1" baseProfile="full" id="mobile-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 41.021 78.01" style="enable-background:new 0 0 41.021 78.01;"
+	 xml:space="preserve">
+<g>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#E1E1E1;" d="M35.453,78.01H5.694C2.969,78.01,0,75.393,0,72.64V4.601
+		C0,1.848,2.969,0,5.694,0h29.759c2.725,0,5.568,1.848,5.568,4.601V72.64C41.021,75.393,38.177,78.01,35.453,78.01z M16.911,73.239
+		h2.414v2.438h2.414v-2.438h2.412v-2.439h-2.412v-2.515h-2.414v2.515h-2.414V73.239z M36.244,12.232H4.899V65.82h31.344V12.232z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#F9F9FA;" d="M4.899,12.232h31.344v53.665H4.899V12.232z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#2AACE3;" d="M6.001,13.88h29.018v13H6.001V13.88z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#01A64F;" d="M6.074,54.897H35.07v10H6.074V54.897z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#EC195C;" d="M6.001,27.552h29.018v13H6.001V27.552z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#FCF16D;" d="M6.063,41.225h29.018v13H6.063V41.225z"/>
+</g>
+</svg>
