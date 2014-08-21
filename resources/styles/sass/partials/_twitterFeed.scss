@@ -13,6 +13,16 @@
   overflow: hidden;
   color:#fff;
 
+  > div.container {
+    position: relative;
+
+    .download-wallpaper {
+      top:auto;
+      bottom:0;
+    }
+
+  }
+
   .twitter-icon {
     display: block;
     padding: 30px 25px;

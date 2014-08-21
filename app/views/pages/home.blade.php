@@ -4,9 +4,21 @@
 
 		@include ('layouts.partials.slider')
 
+		<a href="#" class="sprites-scrollDown" id="scroll-down">Scroll Down</a>
+
 		<div id="profile-bar" class="module">
 
 			<div class="container">
+
+				<a href="download/wallpapers/motorway.zip" class="download-wallpaper">
+
+					<span class="tooltip">Download!</span>
+
+					<span class="sprites-cloudDL">
+						Download wallpaper.
+					</span>
+
+				</a>
 
 				<div class="row">
 
@@ -16,7 +28,7 @@
 
 							<div class="col-md-4">
 
-								<a href="#" class="hover-img">
+								<a href="http://cv.way2adv.com/" target="_blank" class="hover-img">
 									<?php include("images/svg/link.svg"); ?>
 									{{ HTML::image('images/me.jpg', 'David Hewitt', array('width' => '110', 'height' => '110')); }}
 								</a>
@@ -42,10 +54,10 @@
 					<div class="col-md-6">
 
 						<ul id="social-links" class="pull-right">
-							<li class="cv"><a href="#"><?php include("images/svg/cv.svg"); ?></a></li>
-							<li class="facebook"><a href="#"><?php include("images/svg/facebook.svg"); ?></a></li>
-							<li class="twitter"><a href="#"><?php include("images/svg/twitter.svg"); ?></a></li>
-							<li class="linkdin"><a href="#"><?php include("images/svg/linkdin.svg"); ?></a></li>
+							<!--<li class="cv"><a href="#"><?php include("images/svg/cv.svg"); ?></a></li>-->
+							<li class="facebook"><a href="https://www.facebook.com/RAWRHewitt" target="_blank"><?php include("images/svg/facebook.svg"); ?></a></li>
+							<li class="twitter"><a href="https://twitter.com/Mosh1e" target="_blank"><?php include("images/svg/twitter.svg"); ?></a></li>
+							<li class="linkdin"><a href="http://lnkd.in/d9gXEut" target="_blank"><?php include("images/svg/linkdin.svg"); ?></a></li>
 						</ul>
 
 					</div>
@@ -148,6 +160,16 @@
 
 			<div class="container">
 
+				<a href="download/wallpapers/bridge.zip" class="download-wallpaper">
+
+					<span class="tooltip">Download!</span>
+
+					<span class="sprites-cloudDL">
+						Download wallpaper.
+					</span>
+
+				</a>
+
 				<span class="twitter-icon">
 					<?php include("images/svg/twitter.svg"); ?>
 				</span>
@@ -171,39 +193,7 @@
 
 						<h4>Drop me a message</h4>
 
-						<form id="contact">
-
-							<div class="text-group">
-								<label for="name" class="hide">Name</label>
-								<input id="name" type="text" placeholder="Name"/>
-								<span class="sprites-name"></span>
-							</div>
-
-							<div class="text-group">
-								<label for="email" class="hide">Email</label>
-								<input id="email" type="text" placeholder="Email"/>
-								<span class="sprites-email"></span>
-							</div>
-
-							<div class="text-group">
-								<label for="subject" class="hide">Subject</label>
-								<input id="subject" type="text" placeholder="Subject"/>
-								<span class="sprites-subject"></span>
-							</div>
-
-							<div class="text-group">
-								<label for="message" class="hide">Message</label>
-								<textarea id="message" rows="4" placeholder="Message" ></textarea>
-								<span class="sprites-message"></span>
-							</div>
-
-							<div class="text-group clearfix">
-								<button type="submit" class="btn btn-primary pull-right">Submit</button>
-							</div>
-
-							<span class="success">Thank you, I have recived your message and I will respond soon!</span>
-
-						</form>
+						@include ('layouts.partials.contactForm')
 
 					</div>
 
@@ -215,28 +205,47 @@
 
 							<dl>
 								<dt>E-mail:</dt>
-								<dd><a href="mailto:hewitt.20@gmail.com">hewitt.20@gmail.com</a></dd>
+								<dd><a href="mailto:hewitt.20@gmail.com" target="_blank">hewitt.20@gmail.com</a></dd>
 
 								<dt><abbr title="Curriculum vitae">CV</abbr>:</dt>
-								<dd><a href="http://cv.way2adv.com/" title="My Curriculum vitae">http://cv.way2adv.com</a></dd>
+								<dd><a href="http://cv.way2adv.com/" title="My Curriculum vitae" target="_blank">http://cv.way2adv.com</a></dd>
 
 								<dt>Skype:</dt>
 								<dd>Moshiezz</dd>
 
 								<dt>Linkedin:</dt>
-								<dd><a href="#">David Hewitt</a></dd>
+								<dd><a href="#" target="_blank">David Hewitt</a></dd>
 							</dl>
 
 						</div>
 
-						<div id="spotify" class="white-box">
+						<div id="spotify" class="white-box clearfix">
 
-							<img src="#" alt=""/>
+							<ul class="unstyled-list">
 
-							<p>
-								Self Taught
-								<span class="artist">Brother Ali</span>
-							</p>
+								<?php
+									$xml = 'http://ws.audioscrobbler.com/2.0/user/moshiezzzzz/recenttracks.xml';
+									$xh = simplexml_load_file( $xml );
+
+									foreach( $xh->track as $track ) :
+
+									$img = $track->image[1];
+
+									if( $track->image == '' )
+									$img = 'images/no_music.jpg';
+
+									echo '<li>';
+									echo '<img style="float:left; margin-right:20px;" width="64" height="64" src=" ' . $img . '" alt=" ' . $track->name . '"/>';
+									echo '<p>' . $track->name . '<br/><a href=" ' . $track->url . ' " target="_blank"> ' . $track->artist . '</a></p>';
+									echo '</li>';
+
+									break;
+
+									endforeach;
+
+								?>
+
+							</ul>
 
 						</div>
 

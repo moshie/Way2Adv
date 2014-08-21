@@ -14,8 +14,8 @@
 		<link href='http://fonts.googleapis.com/css?family=Raleway:900,300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
-
-        <link rel="stylesheet" href="/css/style.min.css">
+		<link rel="stylesheet" href="/bower_components/FlexSlider/flexslider.css">
+        <link rel="stylesheet" href="/css/style.css">
 
     </head>
 
@@ -86,6 +86,7 @@
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/FlexSlider/jquery.flexslider-min.js"></script>
 		<script src="scripts/jquery.stellar.js"></script>
+		<script src="scripts/main.js"></script>
 		@yield('scripts')
 		<script>
 			$.stellar();

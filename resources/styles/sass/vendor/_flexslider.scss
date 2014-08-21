@@ -1,5 +1,5 @@
 .flexslider {
-  margin-top:11%;
+  margin: 11% 0 124px;
   background:none;
   border:0;
   text-align: center;
@@ -26,4 +26,8 @@
   background: $red;
   border:2px solid $red;
   @include box-shadow(none);
+}
+
+.flex-control-nav {
+  bottom: -77px;
 }
