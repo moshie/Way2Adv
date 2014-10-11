@@ -1,5 +1,26 @@
 footer {
-  padding:80px 0 !important;
+  padding:40px 0 !important;
   color:#fff;
   background: $black;
+  text-align: center;
+
+  .logo {
+    display: block;
+    margin-bottom:1em;
+  }
+}
+@media (min-width:960px){
+
+  footer {
+    text-align:left;
+
+    .copyright {
+      margin-top:10px;
+      width:100%;
+      text-align:right;
+      display:block;
+    }
+
+  }
+
 }

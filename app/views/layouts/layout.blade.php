@@ -21,75 +21,96 @@
 
     <body>
 
-		<div id="main-wrapper">
+		<div id="site-wrapper">
 
-			<div class="fixed-background-image bridge-image"></div>
+			<div id="site-canvas">
 
-			<div class="pattern-overlay pattern-overlay-color"></div>
+				@include ('layouts.partials.mobile-navigation')
 
-			<header>
+				<div id="main-wrapper">
 
-				<div class="container">
+					<div class="cover-background-image bridge-image"></div>
 
-					<div class="row">
+					<div class="pattern-overlay pattern-overlay-color"></div>
 
-						<div class="col-md-6">
+					<header>
 
-							<span class="logo pull-left">Way2adv</span>
+						<div class="container">
 
-							@include ('layouts.partials.navigation')
+							<div class="row">
+
+								<div class="col-sm-6">
+
+									<span class="logo">Way2adv</span>
+
+									<a href="#" class="toggle-nav mobile-nav-icon">
+										<span></span>
+										<span></span>
+										<span></span>
+									</a>
+
+									@include ('layouts.partials.navigation')
+
+								</div>
+
+								<div class="col-sm-6">
+
+									@include ('layouts.partials.search')
+
+								</div>
+
+							</div>
 
 						</div>
 
-						<div class="col-md-6">
+					</header>
 
-							@include ('layouts.partials.search')
+					@yield('heading')
+
+				</div>
+
+				@yield('content')
+
+
+				<footer>
+
+					<div class="container">
+
+						<div class="row">
+
+							<div class="col-md-6">
+
+								<span class="logo">Way2adv</span>
+
+							</div>
+
+							<div class="col-md-6">
+
+								<span class="copyright">Copyright &copy; 2013 - <?php echo date("Y"); ?> Code and Design by David Hewitt</span>
+
+							</div>
 
 						</div>
 
 					</div>
 
-				</div>
-
-			</header>
-
-			@yield('heading')
-
-		</div>
-
-		@yield('content')
-
-
-		<footer>
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-6">
-
-						<span class="logo">Way2adv</span>
-
-					</div>
-
-					<div class="col-md-6">
-
-						<span class="copyright pull-right">Copyright &copy; 2013 - <?php echo date("Y"); ?> Code and Design by David Hewitt</span>
-
-					</div>
-
-				</div>
+				</footer>
 
 			</div>
 
-		</footer>
+
+		</div>
+
+
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/FlexSlider/jquery.flexslider-min.js"></script>
 		<script src="scripts/jquery.stellar.js"></script>
 		<script src="scripts/main.js"></script>
 		@yield('scripts')
 		<script>
-			$.stellar();
+			$.stellar({
+				horizontalOffset: 50
+			});
 		</script>
 
     </body>

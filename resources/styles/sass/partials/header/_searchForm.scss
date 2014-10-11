@@ -1,4 +1,6 @@
 #search {
+  display:none;
+
 
   button {
 
@@ -31,4 +33,11 @@
     }
   }
 
+}
+
+@media (min-width:768px){
+
+  #search {
+    display: block;
+  }
 }

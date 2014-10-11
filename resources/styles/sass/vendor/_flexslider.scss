@@ -1,14 +1,21 @@
 .flexslider {
-  margin: 11% 0 124px;
+  margin: 8% 0 70px;
   background:none;
   border:0;
   text-align: center;
   @include box-shadow(none);
 
   .quote {
-    padding:20px 20px 30px 20px;
-    background: rgba(0,0,0,.2);
     display: inline-block;
+
+    .quote-author {
+      font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+      font-size: 1.2em;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
   }
 }
 
@@ -29,5 +36,26 @@
 }
 
 .flex-control-nav {
-  bottom: -77px;
+  bottom: -30px;
+}
+
+
+@media (min-width:768px){
+
+  .flexslider {
+    margin: 4% 0 140px;
+  }
+
+  .flex-control-nav {
+    bottom: -85px;
+  }
+
+}
+
+@media (min-width:768px){
+
+  .flexslider {
+    margin: 4% 0 140px;
+  }
+
 }

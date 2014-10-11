@@ -1,11 +1,11 @@
-<nav id="main-navigation">
+<nav id="navigation">
 
-	<ul>
-		<li><a href="#" class="sprites-home">Home</a></li>
-		<li><a href="#" class="sprites-portfolio">Portfolio</a></li>
-		<li><a href="#" class="sprites-blog">Blog</a></li>
-		<li><a href="#" class="sprites-market">Marketplace</a></li>
-		<li><a href="#" class="sprites-contact">Contact</a></li>
+	<ul class="clearfix">
+		<li><a href="#"><span class="{{ set_active('/', 'home') }}">Home</span></a></li>
+		<li><a href="#"><span class="{{ set_active('/portfolio', 'portfolio') }}">Portfolio</span></a></li>
+		<li><a href="#"><span class="{{ set_active('/blog', 'blog') }}">Blog</span></a></li>
+		<li><a href="#"><span class="{{ set_active('/marketplace', 'market') }}">Marketplace</span></a></li>
+		<li><a href="#"><span class="{{ set_active('/contact', 'contact') }}">Contact</span></a></li>
 	</ul>
 
 </nav>

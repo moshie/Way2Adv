@@ -8,16 +8,17 @@
   font-family: 'Raleway', sans-serif;
   font-size:1.1em;
   font-weight: $light;
+  line-height: 1.4em;
 }
 
 .copyright {
   font-size:.7em;
-  line-height: 3em;
+  line-height: 1.5em;
 }
 
 h1, .h1 {
   font-family: 'Raleway', sans-serif;
-  font-size:4em;
+  font-size:2em;
   font-weight: $bold;
   text-transform: uppercase;
   margin-top: 20px;
@@ -26,17 +27,17 @@ h1, .h1 {
 
 h2, .h2 {
   font-family: 'Raleway', sans-serif;
-  font-size:2em;
+  font-size:1.3em;
   font-weight: $bold;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
 h3, .h3 {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-size:2em;
-  margin-top: 20px;
+  font-size:1.2em;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -51,14 +52,14 @@ h4, .h4 {
 
 h5, .h5 {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-size:1.6em;
+  font-size: 1.2em;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 h6, .h6 {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-size:1em;
+  font-size:.9em;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 10px;
@@ -94,4 +95,51 @@ a {
 a:hover,
 a:active {
   outline:0;
+}
+
+
+@media (min-width:768px){
+
+  .h1, h1 {
+    font-size: 3em;
+  }
+  .h2, h2 {
+    font-size: 1.8em;
+  }
+  .h3, h3 {
+    font-size: 1.6em;
+  }
+  .h4, h4 {
+
+  }
+  .h5, h5 {
+
+  }
+  .h6, h6 {
+
+  }
+
+}
+
+@media (min-width:960px){
+
+  .h1, h1 {
+
+  }
+  .h2, h2 {
+
+  }
+  .h3, h3 {
+
+  }
+  .h4, h4 {
+
+  }
+  .h5, h5 {
+
+  }
+  .h6, h6 {
+
+  }
+
 }

@@ -6,12 +6,11 @@
   width:100%;
 }
 
-/*modules*/
+@media (min-width:768px){
 
-#profile-bar {
-  background: rgba(0, 0, 0, .7);
-  color: $white;
-  position: absolute;
-  bottom:0;
-  left:0;
+  .module {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
 }

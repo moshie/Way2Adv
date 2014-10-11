@@ -2,6 +2,16 @@
 
 	@section('heading')
 
+		<a href="download/wallpapers/motorway.zip" class="download-wallpaper">
+
+			<span class="tooltip">Download!</span>
+
+			<span class="sprites-cloudDL">
+				Download wallpaper.
+			</span>
+
+		</a>
+
 		@include ('layouts.partials.slider')
 
 		<a href="#" class="sprites-scrollDown" id="scroll-down">Scroll Down</a>
@@ -10,23 +20,13 @@
 
 			<div class="container">
 
-				<a href="download/wallpapers/motorway.zip" class="download-wallpaper">
-
-					<span class="tooltip">Download!</span>
-
-					<span class="sprites-cloudDL">
-						Download wallpaper.
-					</span>
-
-				</a>
-
 				<div class="row">
 
-					<div class="col-md-6">
+					<div class="col-sm-6">
 
 						<div class="row">
 
-							<div class="col-md-4">
+							<div class="col-sm-4">
 
 								<a href="http://cv.way2adv.com/" target="_blank" class="hover-img">
 									<?php include("images/svg/link.svg"); ?>
@@ -35,7 +35,7 @@
 
 							</div>
 
-							<div class="col-md-8">
+							<div class="col-sm-8">
 
 								<h6>David Hewitt</h6>
 
@@ -51,9 +51,9 @@
 
 					</div>
 
-					<div class="col-md-6">
+					<div class="col-sm-6">
 
-						<ul id="social-links" class="pull-right">
+						<ul id="social-links">
 							<!--<li class="cv"><a href="#"><?php include("images/svg/cv.svg"); ?></a></li>-->
 							<li class="facebook"><a href="https://www.facebook.com/RAWRHewitt" target="_blank"><?php include("images/svg/facebook.svg"); ?></a></li>
 							<li class="twitter"><a href="https://twitter.com/Mosh1e" target="_blank"><?php include("images/svg/twitter.svg"); ?></a></li>
@@ -160,6 +160,15 @@
 
 			<div class="container">
 
+				<span class="twitter-icon">
+					<?php include("images/svg/twitter.svg"); ?>
+				</span>
+
+				<div class="text-center twitter-text">
+					<span class="light"><span class="person">@Moshie</span> Dude you make the craziest <span class="hashtag">#Websites</span> ever!</span>
+					<span class="light time">2 hours ago</span>
+				</div>
+
 				<a href="download/wallpapers/bridge.zip" class="download-wallpaper">
 
 					<span class="tooltip">Download!</span>
@@ -169,15 +178,6 @@
 					</span>
 
 				</a>
-
-				<span class="twitter-icon">
-					<?php include("images/svg/twitter.svg"); ?>
-				</span>
-
-				<div class="text-center twitter-text">
-					<span class="light"><span class="person">@Moshie</span> Dude you make the craziest <span class="hashtag">#Websites</span> ever!</span>
-					<span class="light time">2 hours ago</span>
-				</div>
 
 			</div>
 
@@ -223,27 +223,27 @@
 
 							<ul class="unstyled-list">
 
-								<?php
-									$xml = 'http://ws.audioscrobbler.com/2.0/user/moshiezzzzz/recenttracks.xml';
-									$xh = simplexml_load_file( $xml );
+								<!--<?php-->
+									<!--$xml = 'http://ws.audioscrobbler.com/2.0/user/moshiezzzzz/recenttracks.xml';-->
+									<!--$xh = simplexml_load_file( $xml );-->
 
-									foreach( $xh->track as $track ) :
+									<!--foreach( $xh->track as $track ) :-->
 
-									$img = $track->image[1];
+									<!--$img = $track->image[1];-->
 
-									if( $track->image == '' )
-									$img = 'images/no_music.jpg';
+									<!--if( $track->image == '' )-->
+									<!--$img = 'images/no_music.jpg';-->
 
-									echo '<li>';
-									echo '<img style="float:left; margin-right:20px;" width="64" height="64" src=" ' . $img . '" alt=" ' . $track->name . '"/>';
-									echo '<p>' . $track->name . '<br/><a href=" ' . $track->url . ' " target="_blank"> ' . $track->artist . '</a></p>';
-									echo '</li>';
+									<!--echo '<li>';-->
+									<!--echo '<img style="float:left; margin-right:20px;" width="64" height="64" src=" ' . $img . '" alt=" ' . $track->name . '"/>';-->
+									<!--echo '<p>' . $track->name . '<br/><a href=" ' . $track->url . ' " target="_blank"> ' . $track->artist . '</a></p>';-->
+									<!--echo '</li>';-->
 
-									break;
+									<!--break;-->
 
-									endforeach;
+									<!--endforeach;-->
 
-								?>
+								<!--?>-->
 
 							</ul>
 

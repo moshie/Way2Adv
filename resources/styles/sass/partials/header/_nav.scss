@@ -1,37 +1,45 @@
-#main-navigation {
-  margin-left:30px;
-  margin-top:10px;
-  float:left;
+/*Desktop Navi*/
+#navigation {
+  display: none;
+  margin-left:20px;
 
   ul {
 
     li {
-      display: inline-block;
-      float: left;
-      margin-right:20px;
+      float:left;
+      margin-right:15px;
+
       a {
         display: block;
-        text-indent:-9999px;
-      }
-      .sprites-home {
-        width:19px;
-        height:17px;
-      }
-      .sprites-portfolio {
-        width:18px;
-        height:18px;
-      }
-      .sprites-blog {
-        width:16px;
-        height:16px;
-      }
-      .sprites-market {
-        width:23px;
-        height:18px;
-      }
-      .sprites-contact {
-        width:19px;
-        height:15px;
+
+
+        > span {
+          display: block;
+          text-indent:-9999px;
+          margin: 0 auto;
+        }
+
+        .sprites-home {
+          width: 19px;
+          height: 17px;
+        }
+        .sprites-portfolio {
+          width: 18px;
+          height: 18px;
+        }
+        .sprites-blog {
+          width: 16px;
+          height: 16px;
+        }
+        .sprites-market {
+          width: 23px;
+          height: 18px;
+        }
+        .sprites-contact {
+          width: 19px;
+          height: 15px;
+        }
+
       }
 
     }
@@ -39,3 +47,96 @@
   }
 
 }
+
+/*Mobile Navi*/
+
+#site-menu {
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -80px;
+  background: $black;
+  @include box-shadow(#000 -3px 6px 9px inset);
+
+  .mobile-nav-icon {
+    padding: 30px;
+    width: 100%;
+    margin:0;
+    background: #240505;
+  }
+
+  ul {
+
+    li {
+      display: block;
+      width:100%;
+
+      a {
+        display: block;
+        width:100%;
+        padding: 31px 0;
+        border-top:1px solid #333333;
+
+        > span {
+          display: block;
+          text-indent:-9999px;
+          margin: 0 auto;
+        }
+
+        .sprites-home {
+          width: 19px;
+          height: 17px;
+        }
+        .sprites-portfolio {
+          width: 18px;
+          height: 18px;
+        }
+        .sprites-blog {
+          width: 16px;
+          height: 16px;
+        }
+        .sprites-market {
+          width: 23px;
+          height: 18px;
+        }
+        .sprites-contact {
+          width: 19px;
+          height: 15px;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
+.mobile-nav-icon {
+  width:20px;
+  display: block;
+  float:right;
+  margin-top: 10px;
+
+  span {
+    display: block;
+    height:4px;
+    width:100%;
+    background:#fff;
+    margin-bottom:3px;
+  }
+}
+
+@media (min-width:768px){
+
+  #navigation {
+    display: inline-block;
+  }
+
+  .mobile-nav-icon {
+    display:none;
+  }
+
+}
+
